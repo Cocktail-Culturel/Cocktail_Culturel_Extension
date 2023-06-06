@@ -19,6 +19,7 @@ const findGetParameter = (parameterName) => {
 };
 
 export default function videoPageManipulation() {
+  // lien vers la video qui marche : https://www.youtube.com/watch?v=AFU3XB7Aqx0
   const video_id = findGetParameter("v");
   const latitude = window.sessionStorage.getItem("latitude");
   const longitude = window.sessionStorage.getItem("longitude");
