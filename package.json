@@ -1,0 +1,28 @@
+{
+  "name": "cocktail-culturel-extension",
+  "version": "1.0.0",
+  "displayName": "Cocktail Culturel",
+  "author": "gouz",
+  "description": "Add some cultural content into youtube",
+  "scripts": {
+    "build": "vite build",
+    "watch": "vite build --watch",
+    "dev": "vite",
+    "serve:firefox": "web-ext run --start-url \"about:debugging#/runtime/this-firefox\"  --source-dir ./dist/",
+    "serve:chrome": "web-ext run -t chromium --start-url \"https://google.com\" --source-dir ./dist/"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@prettier/plugin-php": "^0.19.4",
+    "@samrum/vite-plugin-web-extension": "^1.0.2",
+    "@types/webextension-polyfill": "^0.8.3",
+    "prettier": "^2.8.7",
+    "vite": "^3.0.4",
+    "web-ext": "^6.8.0"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "sharp": "^0.30.7",
+    "webextension-polyfill": "^0.9.0"
+  }
+}
