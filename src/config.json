@@ -1,0 +1,38 @@
+{
+  "url": "https://cocktail.dev-in.fr",
+  "selectors": {
+    "home": {},
+    "watch": {
+      "channel": ".ytd-channel-name",
+      "title": "h1.ytd-watch-metadata",
+      "navigation_wrapper": "#columns #secondary",
+      "playlist": "#columns #secondary #secondary-inner"
+    }
+  },
+  "labels": {
+    "activities": {
+      "tab": "Activités",
+      "link": "Participer"
+    },
+    "borrowings": {
+      "tab": "Prêts",
+      "link": "Disponible sur place"
+    },
+    "outings": {
+      "tab": "Sorties",
+      "link": "Réserver votre billet"
+    },
+    "purchases": {
+      "tab": "Achats",
+      "link": "Acheter"
+    },
+    "trainings": {
+      "tab": "Formations",
+      "link": "Se former"
+    },
+    "videos": {
+      "tab": "Videos",
+      "link": "Voir"
+    }
+  }
+}

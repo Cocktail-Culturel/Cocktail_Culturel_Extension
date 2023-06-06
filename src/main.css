@@ -1,0 +1,155 @@
+:root {
+  --cocktailculturel-color-youtube: #e52320;
+  --cocktailculturel-color-activities: #79227d;
+  --cocktailculturel-color-borrowings: #f9bd1b;
+  --cocktailculturel-color-outings: #e98021;
+  --cocktailculturel-color-purchases: #e54d95;
+  --cocktailculturel-color-trainings: #3bb6a8;
+}
+
+.cocktailculturel--hidden {
+  display: none !important;
+}
+
+#cocktailculturel-tabs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  flex-direction: row;
+  margin-bottom: 1rem;
+  overflow-x: scroll;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+}
+
+#cocktailculturel-tabs button {
+  background: none;
+  border: none;
+  text-transform: uppercase;
+  border-bottom: 0.25rem solid transparent;
+  font-size: 1.15rem;
+  font-weight: bold;
+  padding: 1.25rem 1rem;
+}
+
+#cocktailculturel-tabs button.active,
+#cocktailculturel-tabs button:hover {
+  color: #000;
+  border-bottom-color: #000;
+}
+
+#cocktailculturel-tabs button[data-cctab="youtube"].active,
+#cocktailculturel-tabs button[data-cctab="youtube"]:hover {
+  color: var(--cocktailculturel-color-youtube);
+  border-block-color: var(--cocktailculturel-color-youtube);
+}
+
+#cocktailculturel-tabs button[data-cctab="activities"].active,
+#cocktailculturel-tabs button[data-cctab="activities"]:hover {
+  color: var(--cocktailculturel-color-activities);
+  border-block-color: var(--cocktailculturel-color-activities);
+}
+
+#cocktailculturel-tabs button[data-cctab="borrowings"].active,
+#cocktailculturel-tabs button[data-cctab="borrowings"]:hover {
+  color: var(--cocktailculturel-color-borrowings);
+  border-block-color: var(--cocktailculturel-color-borrowings);
+}
+
+#cocktailculturel-tabs button[data-cctab="outings"].active,
+#cocktailculturel-tabs button[data-cctab="outings"]:hover {
+  color: var(--cocktailculturel-color-outings);
+  border-block-color: var(--cocktailculturel-color-outings);
+}
+
+#cocktailculturel-tabs button[data-cctab="purchases"].active,
+#cocktailculturel-tabs button[data-cctab="purchases"]:hover {
+  color: var(--cocktailculturel-color-purchases);
+  border-block-color: var(--cocktailculturel-color-purchases);
+}
+
+#cocktailculturel-tabs button[data-cctab="trainings"].active,
+#cocktailculturel-tabs button[data-cctab="trainings"]:hover {
+  color: var(--cocktailculturel-color-trainings);
+  border-block-color: var(--cocktailculturel-color-trainings);
+}
+
+.cocktailculturel--tabs {
+  width: 100%;
+}
+
+.cocktailculturel--item {
+  box-sizing: border-box;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  margin-bottom: 1rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.cocktailculturel--item--clickable {
+  cursor: pointer;
+}
+
+.cocktailculturel--item--clickable:hover {
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+.cocktailculturel--item--illustration {
+  display: block;
+  width: 181px;
+  min-width: 181px;
+  height: 143px;
+  background-color: silver;
+}
+
+.cocktailculturel--item--text {
+  flex-grow: 1;
+  display: flex;
+  height: 100%;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-left: 1.5rem;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: gray;
+  font-size: 1.2rem;
+}
+
+.cocktailculturel--item--text--title {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 0.75rem;
+}
+
+.cocktailculturel--item--text--link {
+  margin-top: 0.75rem;
+}
+
+.cocktailculturel--item--text--link a {
+  text-decoration: none;
+}
+
+.cocktailculturel--item--text--link span {
+  background: var(--yt-spec-badge-chip-background);
+  color: var(--yt-spec-themed-green);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 2px;
+  padding: 3px 4px;
+  font-size: var(--yt-badge-font-size, 1.2rem);
+  font-weight: var(--yt-badge-font-weight, 500);
+  line-height: var(--yt-badge-line-height-size, 1.2rem);
+  letter-spacing: var(--yt-badge-letter-spacing, unset);
+}
+
+.cocktailculturel--item--text--link a:hover span {
+  background-color: #c2c2c2;
+}
