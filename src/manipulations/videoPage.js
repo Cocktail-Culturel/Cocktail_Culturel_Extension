@@ -27,7 +27,7 @@ export default function videoPageManipulation() {
   console.log("ID de la vidéo: ");
   console.log(video_id);
   axios
-    // on effectue une recherche avec le site de cocj=ktail culturel en utilisant la config youtube et les params de la vidéo
+    // on effectue une recherche avec le site de cocktail culturel en utilisant la config youtube et les params de la vidéo
     .get(`${config.url}/api/youtube/${video_id}/${latitude}/${longitude}`)
     .then((response) => {
       // une fois qu'on a la réponse, on créé les onglets
@@ -36,10 +36,9 @@ export default function videoPageManipulation() {
     })
     .catch(() => {
       console.log("requête échouée");
-      // en cas d'échec de la requête, on va chercher dans infos 
+      // en cas d'échec, on effectue la requête avec les keywords trouvés dans la partie infos de la page
       getWebPageInformation().then((infos) => {
         axios
-          // on 
           .get(`${config.url}/api/keyword/${infos}/${latitude}/${longitude}`)
           .then((response) => {
             createTabs(response.data);
