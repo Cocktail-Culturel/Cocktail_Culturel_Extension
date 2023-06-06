@@ -18,7 +18,7 @@ const findGetParameter = (parameterName) => {
   return result;
 };
 
-export default function videoPageManipulation() {
+/*export default function videoPageManipulation() {
   // lien vers la video qui marche : https://www.youtube.com/watch?v=AFU3XB7Aqx0
   const video_id = findGetParameter("v");
   const latitude = window.sessionStorage.getItem("latitude");
@@ -45,5 +45,35 @@ export default function videoPageManipulation() {
             createTabs(response.data);
           });
       });
+    });
+}*/
+
+export default function videoPageManipulation() {
+  // lien vers la video qui marche : https://www.youtube.com/watch?v=AFU3XB7Aqx0
+  const video_id = findGetParameter("v");
+  const latitude = window.sessionStorage.getItem("latitude");
+  const longitude = window.sessionStorage.getItem("longitude");
+  console.log(`X: ${latitude}, Y: ${longitude}`);
+  // on entre dans la manipulation de la page video
+  console.log(`ID de la vidéo: ${video_id}`);
+  axios
+    // on effectue une recherche avec le site de cocktail culturel en utilisant la config youtube et les params de la vidéo
+    .get(`${config.url}/videos/${video_id}`)
+    .then((response) => {
+      // une fois qu'on a la réponse, on créé les onglets
+      //console.log(response);
+      createTabs(response);
+      console.log("requête effectuée avec succès");
+    })
+    .catch(() => {
+      console.log("requête échouée");
+      // en cas d'échec, on effectue la requête avec les keywords trouvés dans la partie infos de la page
+      /*getWebPageInformation().then((infos) => {
+        axios
+          .get(`${config.url}/api/keyword/${infos}/${latitude}/${longitude}`)
+          .then((response) => {
+            createTabs(response.data);
+          });
+      });*/
     });
 }
