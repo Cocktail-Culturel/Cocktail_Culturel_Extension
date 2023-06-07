@@ -2,7 +2,7 @@
   "name": "cocktail-culturel-extension",
   "version": "1.0.0",
   "displayName": "Cocktail Culturel",
-  "author": "gouz",
+  "author": "gouz, TSE",
   "description": "Add some cultural content into youtube",
   "scripts": {
     "build": "vite build",
