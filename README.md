@@ -1,30 +1,32 @@
-# cocktail-culturel-extension
+# Cocktail Culturel ~ extension web
 
-## Add some cultural content into youtube
+## Ajouter du contenu culturel sur youtube
 
-[![Build](https://github.com/MathildeRab/CocktailCulturelExtension/actions/workflows/build.yml/badge.svg)](https://github.com/MathildeRab/CocktailCulturelExtension/actions/workflows/build.yml)
+[![Extension](https://img.shields.io/badge/T%C3%A9l%C3%A9charger-v1.0.0%20-brightgreen)](https://github.com/Mohamed-elg/Cocktail_Culturel_Extension/releases/download/1.0.0/cocktail-culturel-extension.zip)
 
-## Usage
+[![Build](https://github.com/Mohamed-elg/CocktailCulturelExtension/actions/workflows/build.yml/badge.svg)](https://github.com/Mohamed-elg/CocktailCulturelExtension/actions/workflows/build.yml)
 
-Download the release and install the extension through the extension manager of your web browser
+## Utilisation
 
-## Project Setup
+Télécharger l'extension depuis les _Releases_, décompresser le zip et installer l'extension depuis le gestionnaire d'extension de votre navigateur.
+
+**Pensez à désactiver Adblock**
+
+## Developpement
+
+### Installation
 
 ```bash
 npm install
 ```
 
-#### Build
-
-Minifies and optimizes extension build
+### Build
 
 ```bash
 npm run build
 ```
 
-### Load extension in browser
-
-Loads the contents of the dist directory into the specified browser
+### Charger l'extension dans le navigateur
 
 ```bash
 npm run serve:chrome
