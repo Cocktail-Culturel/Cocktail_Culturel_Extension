@@ -9,5 +9,6 @@ document.querySelector("#app").innerHTML = `
   </div>
   <div>
     <a href="http://cocktail-culturel.com/" target="_blank">Visiter le site</a>
+    <h4>Désactiver Adblock sur YouTube</h4>
   </div>
 `;
