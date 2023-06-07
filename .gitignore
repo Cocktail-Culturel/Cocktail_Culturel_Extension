@@ -1,4 +1,5 @@
 **/dist
+**/extension
 **/node_modules
 .DS_Store
 .vscode/*

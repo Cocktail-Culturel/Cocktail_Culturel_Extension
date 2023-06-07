@@ -4,41 +4,21 @@
 
 [![Build](https://github.com/MathildeRab/CocktailCulturelExtension/actions/workflows/build.yml/badge.svg)](https://github.com/MathildeRab/CocktailCulturelExtension/actions/workflows/build.yml)
 
-## Usage Notes
+## Usage
 
 Download the release and install the extension through the extension manager of your web browser
 
 ## Project Setup
 
-```sh
+```bash
 npm install
 ```
 
-## Commands
-
-### Build
-
-#### Development, HMR
-
-Hot Module Reloading is used to load changes inline without requiring extension rebuilds and extension/page reloads
-
-```sh
-npm run dev
-```
-
-#### Development, Watch
-
-Rebuilds extension on file changes. Requires a reload of the extension (and page reload if using content scripts)
-
-```sh
-npm run watch
-```
-
-#### Production
+#### Build
 
 Minifies and optimizes extension build
 
-```sh
+```bash
 npm run build
 ```
 
@@ -46,10 +26,10 @@ npm run build
 
 Loads the contents of the dist directory into the specified browser
 
-```sh
+```bash
 npm run serve:chrome
 ```
 
-```sh
+```bash
 npm run serve:firefox
 ```
