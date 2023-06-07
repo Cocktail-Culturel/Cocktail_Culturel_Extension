@@ -1,6 +1,6 @@
 # cocktail-culturel-extension
 
-[Build](https://github.com/MathildeRab/CocktailCulturelExtension/actions/workflows/build.yml/badge.svg)
+[![Build](https://github.com/MathildeRab/CocktailCulturelExtension/actions/workflows/build.yml/badge.svg)](https://github.com/MathildeRab/CocktailCulturelExtension/actions/workflows/build.yml)
 
 This template should help get you started developing a vanilla web extension in Vite.
 
