@@ -8,7 +8,7 @@
 
 ## Utilisation
 
-Télécharger l'extension depuis les _Releases_, décompresser le zip et installer l'extension depuis le gestionnaire d'extension de votre navigateur.
+Télécharger l'extension, décompresser le zip et installer l'extension depuis le gestionnaire d'extension de votre navigateur.
 
 **Pensez à désactiver Adblock**
 
