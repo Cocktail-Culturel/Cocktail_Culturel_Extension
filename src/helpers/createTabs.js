@@ -179,7 +179,7 @@ const makeItem = (
   if (illustration) {
     illus = `
       <div class="cocktailculturel--item--illustration">
-        <img src=${illustration} loading="lazy" />
+        <img src=${illustration} width=95% loading="lazy" />
       </div>
     `;
   }
@@ -260,7 +260,7 @@ export default function createTabs(api_json) {
             makeItem(
               element["record"]["title"],
               element["record"]["link"],
-              "https://app.cocktail-culturel.com/assets/images/logo.svg",
+              "https://upload.wikimedia.org/wikipedia/commons/archive/8/84/20230425133626%21Logo_BnF.svg",
               element["record"]["author"],
               element["record"]["subject"]
             )

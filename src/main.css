@@ -30,6 +30,7 @@
   font-size: 1.15rem;
   font-weight: bold;
   padding: 1.25rem 1rem;
+  color: #000;
 }
 
 #cocktailculturel-tabs button.active,
@@ -152,4 +153,14 @@
 
 .cocktailculturel--item--text--link a:hover span {
   background-color: #c2c2c2;
+}
+
+@media (prefers-color-scheme: dark) {
+  #cocktailculturel-tabs button {
+    color: white;
+  }
+
+  .cocktailculturel--tabs {
+    background-color: white;
+  }
 }
