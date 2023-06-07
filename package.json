@@ -5,11 +5,11 @@
   "author": "gouz, TSE",
   "description": "Add some cultural content into youtube",
   "scripts": {
-    "build": "vite build --outDir extension",
-    "watch": "vite build --watch --outDir extension",
+    "build": "vite build --outDir cocktail-culturel-extension",
+    "watch": "vite build --watch --outDir cocktail-culturel-extension",
     "dev": "vite",
-    "serve:firefox": "web-ext run --start-url \"about:debugging#/runtime/this-firefox\"  --source-dir ./extension/",
-    "serve:chrome": "web-ext run -t chromium --start-url \"https://www.youtube.com\" --source-dir ./extension/"
+    "serve:firefox": "web-ext run --start-url \"about:debugging#/runtime/this-firefox\"  --source-dir ./cocktail-culturel-extension/",
+    "serve:chrome": "web-ext run -t chromium --start-url \"https://www.youtube.com\" --source-dir ./cocktail-culturel-extension/"
   },
   "license": "MIT",
   "devDependencies": {
