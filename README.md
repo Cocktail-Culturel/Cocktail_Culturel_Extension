@@ -2,7 +2,7 @@
 
 ## Ajouter du contenu culturel sur youtube
 
-[![Extension](https://img.shields.io/badge/T%C3%A9l%C3%A9charger-v1.0.0%20-brightgreen)](https://github.com/Mohamed-elg/Cocktail_Culturel_Extension/releases/download/1.0.0/cocktail-culturel-extension.zip)
+[![Extension](https://img.shields.io/badge/T%C3%A9l%C3%A9charger-v1.0.0%20-brightgreen)](https://github.com/Mohamed-elg/Cocktail_Culturel_Extension/releases/download/1.0.0/cocktail-culture-extension.zip)
 
 [![Build](https://github.com/Mohamed-elg/CocktailCulturelExtension/actions/workflows/build.yml/badge.svg)](https://github.com/Mohamed-elg/CocktailCulturelExtension/actions/workflows/build.yml)
 
