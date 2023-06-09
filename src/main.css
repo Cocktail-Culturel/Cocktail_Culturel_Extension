@@ -14,7 +14,6 @@
 #cocktailculturel-tabs {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   width: 100%;
   flex-direction: row;
   margin-bottom: 1rem;
@@ -107,6 +106,10 @@
   min-width: 181px;
   height: 143px;
   background-color: silver;
+}
+
+.cocktailculturel--item--illustration img{
+  margin-top: 10%;
 }
 
 .cocktailculturel--item--text {
