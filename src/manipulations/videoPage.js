@@ -57,10 +57,12 @@ export default function videoPageManipulation() {
   console.log(`ID de la vidéo: ${video_id}`);
   axios
     // on effectue une recherche avec le site de cocktail culturel en utilisant la config youtube et les params de la vidéo
-    .get(`${config.url}/videos/${video_id}`)
+    .get(
+      `${config.url}/videos/${video_id}/geo?latitude=${latitude}&longitude=${longitude}`
+    )
     .then((response) => {
       // une fois qu'on a la réponse, on créé les onglets
-      //console.log(response);
+      console.log(response);
       createTabs(response);
       console.log("requête effectuée avec succès");
     })

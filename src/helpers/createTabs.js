@@ -9,9 +9,9 @@ const makeItem = (
   illustration,
   description,
   label,
-  tarif,
   tarif_from,
-  distance
+  distance,
+  tarif
 ) => {
   let illus = `<div class="cocktailculturel--item--illustration"></div>`;
   if (illustration) {
@@ -90,19 +90,36 @@ export default function createTabs(api_json) {
       case "activities":
         break;
       case "borrowings":
-        api_json["data"]["searchRecordItems"].forEach((element) => {
-          content.push(
-            makeItem(
-              element["record"]["title"],
-              element["record"]["link"],
-              "https://upload.wikimedia.org/wikipedia/commons/archive/8/84/20230425133626%21Logo_BnF.svg",
-              element["record"]["author"],
-              element["record"]["subject"]
-            )
-          );
-        });
+        api_json["data"]["searchRecordItems"]["SearchRecordItemBNF"].forEach(
+          (element) => {
+            content.push(
+              makeItem(
+                element["record"]["title"],
+                element["record"]["link"],
+                "https://upload.wikimedia.org/wikipedia/commons/archive/8/84/20230425133626%21Logo_BnF.svg",
+                element["record"]["author"],
+                element["record"]["subject"]
+              )
+            );
+          }
+        );
         break;
       case "outings":
+        api_json["data"]["searchRecordItems"]["SearchRecordItemDT"].forEach(
+          (element) => {
+            content.push(
+              makeItem(
+                element["record"]["title"],
+                element["record"]["link"],
+                "https://www.datatourisme.fr/assets/images/logos/datatourisme-250.png",
+                element["record"]["description"],
+                "Le " + element["record"]["date"],
+                element["record"]["tarif_from"],
+                element["record"]["distance"] + " km"
+              )
+            );
+          }
+        );
         break;
       case "purchases":
         break;
