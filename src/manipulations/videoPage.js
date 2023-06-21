@@ -62,7 +62,7 @@ export default function videoPageManipulation() {
     )
     .then((response) => {
       // une fois qu'on a la réponse, on créé les onglets
-      console.log(response);
+      //console.log(response);
       createTabs(response);
       console.log("requête effectuée avec succès");
     })

@@ -1,5 +1,5 @@
 {
-  "url": "http://api.cocktail-culturel:3001",
+  "url": "https://front-ping.cocktail-culturel.com",
   "selectors": {
     "home": {},
     "watch": {

@@ -107,6 +107,7 @@ export default function createTabs(api_json) {
       case "outings":
         api_json["data"]["searchRecordItems"]["SearchRecordItemDT"].forEach(
           (element) => {
+            console.log(element["record"]["distance"]);
             content.push(
               makeItem(
                 element["record"]["title"],
@@ -115,7 +116,7 @@ export default function createTabs(api_json) {
                 element["record"]["description"],
                 "Le " + element["record"]["date"],
                 element["record"]["tarif_from"],
-                element["record"]["distance"] + " km"
+                element["record"]["distance"]
               )
             );
           }
